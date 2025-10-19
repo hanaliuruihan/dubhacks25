@@ -678,7 +678,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="survey-header">
-        <h1>Registrawr</h1>
+        <h1>Advise Me</h1>
         <p>Let's create your perfect course schedule!</p>
         <div className="progress-bar">
           <div 
