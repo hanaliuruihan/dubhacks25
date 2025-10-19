@@ -23,7 +23,6 @@ const Courses = () => {
             professor: 'Kevin Zhang',
             schedule: 'MWF 10:30-11:20',
             location: 'CSE 303',
-            type: 'Core Requirement',
             description: 'Introduction to programming using Java.',
             prerequisites: 'None',
             rating: 4.5
@@ -36,7 +35,6 @@ const Courses = () => {
             professor: 'Sarah Johnson',
             schedule: 'MTWThF 9:30-10:20',
             location: 'SMI 205',
-            type: 'Math Requirement',
             description: 'First quarter in calculus sequence.',
             prerequisites: 'Precalculus or equivalent',
             rating: 4.2
@@ -49,7 +47,6 @@ const Courses = () => {
             professor: 'Michael Brown',
             schedule: 'TTh 1:30-3:20',
             location: 'SMI 109',
-            type: 'Writing Requirement',
             description: 'Academic writing and critical thinking.',
             prerequisites: 'None',
             rating: 4.0
@@ -68,7 +65,6 @@ const Courses = () => {
             professor: 'Adam Blank',
             schedule: 'MWF 12:30-1:20',
             location: 'CSE 303',
-            type: 'Core Requirement',
             description: 'Continuation of CSE 142. Data structures and algorithms.',
             prerequisites: 'CSE 142',
             rating: 4.7
@@ -81,7 +77,6 @@ const Courses = () => {
             professor: 'Emily Chen',
             schedule: 'MTWThF 10:30-11:20',
             location: 'SMI 205',
-            type: 'Math Requirement',
             description: 'Second quarter in calculus sequence.',
             prerequisites: 'MATH 124',
             rating: 4.3
@@ -94,7 +89,6 @@ const Courses = () => {
             professor: 'David Lee',
             schedule: 'TTh 2:30-4:20',
             location: 'PHY 120',
-            type: 'Science Requirement',
             description: 'Introduction to mechanics and wave motion.',
             prerequisites: 'MATH 124',
             rating: 3.9
@@ -187,7 +181,7 @@ const Courses = () => {
                   <div className="course-info">
                     <div className="info-row">
                       <span className="info-label">👤</span>
-                      <span>{course.professor}</span>
+                      <span>{course.professor}</span> <span className="course-rating">⭐ {course.rating}</span>
                     </div>
                     <div className="info-row">
                       <span className="info-label">🕒</span>
@@ -197,10 +191,6 @@ const Courses = () => {
                       <span className="info-label">📍</span>
                       <span>{course.location}</span>
                     </div>
-                  </div>
-                  <div className="course-footer">
-                    <span className="course-type">{course.type}</span>
-                    <span className="course-rating">⭐ {course.rating}</span>
                   </div>
                 </div>
               ))}
