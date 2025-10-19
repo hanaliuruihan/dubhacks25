@@ -1,6 +1,5 @@
 .courses-container {
     min-height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 2rem;
   }
   
@@ -104,8 +103,6 @@
   }
   
   .total-credits {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-weight: 600;
@@ -216,16 +213,7 @@
     padding-top: 1rem;
     border-top: 1px solid #e2e8f0;
   }
-  
-  .course-type {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 12px;
-    font-size: 0.8rem;
-    font-weight: 600;
-  }
-  
+
   .course-rating {
     color: #d69e2e;
     font-weight: 600;
